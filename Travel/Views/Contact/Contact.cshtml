@@ -1,56 +1,67 @@
-﻿<head>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=5b3ce3597851110001cf624815ca6986a381449d815dda9c066a9090&callback=initMap" async defer></script>
+    <style>
+        .telegram-link:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
 </head>
-<style>
-    .telegram-link:hover {
-        color: red; /* Rangni o'zgartirish */
-        text-decoration: underline;
-    }
-</style>
-<section class="ftco-section ftco-no-pb contact-section">
-    <div class="container">
-        <div class="row d-flex contact-info">
-            <div class="col-md-3 d-flex">
-                <div class="align-self-stretch box p-4 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="icon-map-signs"></span>
+<body>
+    <section class="ftco-section ftco-no-pb contact-section">
+        <div class="container">
+            <div class="row d-flex contact-info">
+                <div class="col-md-3 d-flex">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-map-signs"></span>
+                        </div>
+                        <h3 class="mb-2">Address</h3>
+                        <p>Хоразим вилояти Ургач шаҳар Нукус кўча 1а 22 уй</p>
                     </div>
-                    <h3 class="mb-2">Address</h3>
-                    <p>Хоразим вилояти Ургач шаҳар Нукус кўча 1а 22 уй</p>
                 </div>
-            </div>
-            <div class="col-md-3 d-flex">
-                <div class="align-self-stretch box p-4 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="icon-phone2"></span>
+                <div class="col-md-3 d-flex">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-phone2"></span>
+                        </div>
+                        <h3 class="mb-2">Contact Number</h3>
+                        <p><a href="tel://1234567920">+998 77 318 95 91</a></p>
                     </div>
-                    <h3 class="mb-2">Contact Number</h3>
-                    <p><a href="tel://1234567920">+998 77 318 95 91</a></p>
                 </div>
-            </div>
-            <div class="col-md-3 d-flex">
-                <div class="align-self-stretch box p-4 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="icon-paper-plane"></span>
+                <div class="col-md-3 d-flex">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-paper-plane"></span>
+                        </div>
+                        <h3 class="mb-2">Telegram Address</h3>
+                        <p><a href="https://t.me/Ako7Rin" target="_blank" class="telegram-link">KavsarAviaTour</a></p>
                     </div>
-                    <h3 class="mb-2">Telegram Address</h3>
-                    <p><a href="https://t.me/x_kavsartour" target="_blank" class="telegram-link">KavsarAviaTour</a></p>
                 </div>
-            </div>
 
-            <div class="col-md-3 d-flex">
-                <div class="align-self-stretch box p-4 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="fas fa-envelope"></span>
+                <div class="col-md-3 d-flex">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fas fa-envelope"></span>
+                        </div>
+                        <h3 class="mb-2">Email Address</h3>
+                        <p><a href="mailto:x_kavsartour@bk.ru" class="telegram-link">x_kavsartour@bk.ru</a></p>
                     </div>
-                    <h3 class="mb-2">Email Address</h3>
-                    <p><a href="mailto:x_kavsartour@bk.ru" class="telegram-link">x_kavsartour@bk.ru</a></p>
                 </div>
             </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
 <section class="ftco-section contact-section">
     <div class="container">
@@ -74,12 +85,12 @@
 
             </div>
 
-            <div class="col-md-6 d-flex">
-                <div id="map" class="bg-white"></div>
+                <div class="col-md-6 d-flex">
+                    <div id="map" class="bg-white"></div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 <script src="~/js/jquery.min.js"></script>
 <script src="~/js/jquery-migrate-3.0.1.min.js"></script>
 <script src="~/js/popper.min.js"></script>
