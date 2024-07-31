@@ -34,7 +34,7 @@
                         <span class="icon-paper-plane"></span>
                     </div>
                     <h3 class="mb-2">Telegram Address</h3>
-                    <p><a href="https://t.me/Ako7Rin" target="_blank" class="telegram-link">KavsarAviaTour</a></p>
+                    <p><a href="https://t.me/KavsarAviaTourChat" target="_blank" class="telegram-link">KavsarAviaTour</a></p>
                 </div>
             </div>
 
@@ -58,19 +58,17 @@
             <div class="col-md-6 order-md-last d-flex">
                 <form action="#" class="bg-light p-5 contact-form">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Name">
+                        <input id="name" type="text" class="form-control" placeholder="Your Name">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Email">
+                        <input id="email" type="text" class="form-control" placeholder="Your Email">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message"  cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Subject">
-                    </div>
-                    <div class="form-group">
-                        <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5 SendTax">
+                        <input id="send" type="submit" value="Send Message" class="btn btn-primary py-3 px-5 SendTax">
                     </div>
                 </form>
 
@@ -98,3 +96,74 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="~/js/google-map.js"></script>
 <script src="~/js/main.js"></script>
+<script>
+    // $.ajax({
+    //     url: '/Telegram/SendMessages',
+    //     type: 'POST',
+    //     contentType: 'application/json',
+    //     data: JSON.stringify({
+    //         number: '1234567890',
+    //         username: 'https:example.com',
+    //         message: 'Привет, это тестовое сообщение!'
+    //     }),
+    //     success: function (response) {
+    //         console.log('Сообщение отправлено успешно:', response);
+    //     },
+    //     error: function (error) {
+    //         console.error('Ошибка при отправке сообщения:', error);
+    //     }
+    // });
+    // $.post("/Telegram/SendMessages", { number: "123456", username: 'https:example.com', message: 'Привет, это тестовое сообщение!' })
+    //     .done(function (dataDis) {
+
+    //     debugger;
+    //     var dataDisReason = JSON.parse(dataDis.reason);
+
+    // $.post("/Telegram/SendMessages", {
+    //     number: "123456",
+    //     username: 'https://example.com',
+    //     message: 'Привет, это тестовое сообщение!'
+    // })
+    //     .done(function (data) {
+    //         // data - сервердан келган жавоб
+    //         console.log("Маълумот юборилди ва сервердан жавоб олинди:", data);
+    //     })
+    //     .fail(function (jqXHR, textStatus, errorThrown) {
+    //         console.error("Хатолик юз берди:", textStatus, errorThrown);
+    //     });
+
+
+    document.getElementById('send').addEventListener('click', function () {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+
+        $.post("/Telegram/SendMessages", { number: name, username: email, message: message })
+        .done(function(data){
+            
+        })
+        // $.ajax({
+        //     url: '/Telegram/SendMessages',
+        //     type: 'POST',
+        //     contentType: 'application/json',
+        //     data: JSON.stringify({
+        //         number: email,
+        //         username: name,
+        //         message: message
+        //     }),
+        //     success: function (response) {
+        //         // Success handling
+        //         alert('Message sent successfully!');
+        //     },
+        //     error: function (xhr, status, error) {
+        //         // Error handling
+        //         console.error('Error:', error);
+        //         alert('Failed to send message.');
+        //     }
+        // });
+    });
+
+
+
+
+</script>
