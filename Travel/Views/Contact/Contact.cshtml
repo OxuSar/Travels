@@ -62,7 +62,7 @@
             </div>
         </div>
     </section>
-
+  
 <section class="ftco-section contact-section">
     <div class="container">
         <div class="row block-9">
@@ -72,7 +72,7 @@
                         <input id="name" type="text" class="form-control" placeholder="Your Name">
                     </div>
                     <div class="form-group">
-                        <input id="email" type="text" class="form-control" placeholder="Your Email">
+                        <input id="email" type="text" class="form-control" placeholder=" Your Telegram Addres">
                     </div>
 
                     <div class="form-group">
@@ -91,6 +91,7 @@
             </div>
         </div>
     </section>
+</body>
 <script src="~/js/jquery.min.js"></script>
 <script src="~/js/jquery-migrate-3.0.1.min.js"></script>
 <script src="~/js/popper.min.js"></script>
@@ -151,27 +152,12 @@
 
         $.post("/Telegram/SendMessages", { number: name, username: email, message: message })
         .done(function(data){
-            
+
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
         })
-        // $.ajax({
-        //     url: '/Telegram/SendMessages',
-        //     type: 'POST',
-        //     contentType: 'application/json',
-        //     data: JSON.stringify({
-        //         number: email,
-        //         username: name,
-        //         message: message
-        //     }),
-        //     success: function (response) {
-        //         // Success handling
-        //         alert('Message sent successfully!');
-        //     },
-        //     error: function (xhr, status, error) {
-        //         // Error handling
-        //         console.error('Error:', error);
-        //         alert('Failed to send message.');
-        //     }
-        // });
+       
     });
 
 
