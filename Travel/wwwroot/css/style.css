@@ -9110,10 +9110,13 @@ textarea.form-control {
   .blog-entry .two {
     width: calc(100% - 55px); }
   .blog-entry span.day {
-    font-size: 50px;
+    font-size: 20px;
     font-weight: 300;
     color: #fff;
-    line-height: 1; }
+    line-height: 1; 
+    text-align: center;
+    white-space: nowrap; /* Запрещает перенос текста */
+  }
   .blog-entry span.yr, .blog-entry span.mos {
     display: block;
     font-size: 13px;

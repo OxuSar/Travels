@@ -1,16 +1,26 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["title"];
 }
+
+
+
+
 <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
             <div class="col-md-9 text text-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                <a href="https://vimeo.com/347747035" class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
+                <a href="~/myvideo/video_2024-09-11_18-44-13.mp4" class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
                     <span class="ion-ios-play"></span>
                 </a>
-                <p class="caps" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Дунёнинг исталган бурчагига саёҳат қилинг</p>
-                <h1 data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Биз билан саёҳатингизни унутилмас қилинг</h1>
+        
+                <p class="caps" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">@Localizer["travel"]</p>
+                <h1 data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">@Localizer["withUs"]</h1>
+                
             </div>
         </div>
     </div>
@@ -95,13 +105,10 @@
     <div class="container">
         <div class="row d-flex">
             <div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate">
-                <h2 class="mb-4">Малдив оролларида бўлганмисиз? Саёҳат қилиш вақти келди</h2>
-                <p>Эртаклардаги сув ости дунёси, қуёшда порлаётган қумли ёки ҳайратда қолдирувчи мовий чироқлар билан қопланган мовий сувли пляжлар, янги денгиз маҳсулотлари ва чинакам қулай дам олиш.</p>
-                <p>
-                    Бу ерда сиз сувнинг 20 метр чуқурлигида ўзингизни дайвингда синаб кўришингиз, дельфинларни яқиндан кўриш учун океанда қайиқ билан ҳаракатланишингиз, 
-                    жонли мусиқа остида қуёш ботишини томоша қилишингиз, СПАда ҳордиқ чиқаришингиз ва албатта сёрфинг, гидросикл каби сув спорти турларидан фойдаланишингиз мумкин.
-                </p>
-                <p><a href="#" class="btn btn-primary py-3 px-4">Поиск пункта назначения</a></p>
+                <h2 class="mb-4">@Localizer["Maldiv"]"</h2>
+                <p>@Localizer["world"]</p>
+                <p>@Localizer["world1"]</p>
+                <p><a href='@Url.Action("Blog", "Blog")' class="btn btn-primary py-3 px-4">@Localizer["Travelss"]</a></p>
             </div>
             <div class="col-md-6">
                 <div class="row">
@@ -109,8 +116,8 @@
                         <div class="media block-6 services d-block">
                             <div class="icon"><span class="flaticon-paragliding"></span></div>
                             <div class="media-body">
-                                <h3 class="heading mb-3">Тадбирлар </h3>
-                                <p>Саёҳатизгиз давомида кўнгил очар тадбирлардан роҳатланинг, қизиқарли ўйинлар ва таъсуродли чиқишлардан завқланинг.</p>
+                                <h3 class="heading mb-3">@Localizer["events"] </h3>
+                                <p> @Localizer["good"]</p>
                             </div>
                         </div>
                     </div>
@@ -118,8 +125,8 @@
                         <div class="media block-6 services d-block">
                             <div class="icon"><span class="flaticon-route"></span></div>
                             <div class="media-body">
-                                <h3 class="heading mb-3">Ташкилли саёҳатлар</h3>
-                                <p>Саёҳат давомида меморий обидалар, шаҳарнинг кўнгил очар майдонлари, турли хил егзотик муҳитдан баҳрамант бўлиш имконияти.</p>
+                                <h3 class="heading mb-3"> @Localizer["organizational"]</h3>
+                                <p> @Localizer["organizational1"]</p>
                             </div>
                         </div>
                     </div>
@@ -127,8 +134,8 @@
                         <div class="media block-6 services d-block">
                             <div class="icon"><span class="flaticon-tour-guide"></span></div>
                             <div class="media-body">
-                                <h3 class="heading mb-3">Шахсий гид</h3>
-                                <p>Шаҳар тарихи ва маданяти сизга тўлиқ таъсурод қолдириш мақсадида сизга шахсий гит ёллаш хизматларидан фойдаланиш имкони.</p>
+                                <h3 class="heading mb-3"> @Localizer["git"]</h3>
+                                <p> @Localizer["City"]</p>
                             </div>
                         </div>
                     </div>
@@ -136,8 +143,8 @@
                         <div class="media block-6 services d-block">
                             <div class="icon"><span class="flaticon-map"></span></div>
                             <div class="media-body">
-                                <h3 class="heading mb-3">Жойлашув Менежери</h3>
-                                <p>Дам олиш муддатида жойлашувнинг энг гўзал масканларидан тўлиқ баҳрамант бўлишингиз учун масъул ходимлар бириктирилиши.</p>
+                                <h3 class="heading mb-3"> @Localizer["Locations"]</h3>
+                                <p>@Localizer["Locations1"]</p>
                             </div>
                         </div>
                     </div>
@@ -156,8 +163,8 @@
             <div class="col-md-6 pl-md-5 py-5">
                 <div class="row justify-content-start pb-3">
                     <div class="col-md-12 heading-section ftco-animate">
-                        <h2 class="mb-4">Биз билан саёҳатингизни унутилмас ва хавфсиз қилинг</h2>
-                        <p>Биз билан ҳамкорликда бўлган мижозларимизни ишончлари бизнинг мижозларимизга қулайлик ва ажойиб ҳордиқ чиқаришлари учун жамоа бўлиб ҳаракат қилишимиздан.</p>
+                        <h2 class="mb-4"> @Localizer["travelWithUs"]</h2>
+                        <p> @Localizer["partner1"]</p>
                     </div>
                 </div>
                 <div class="row">
@@ -165,7 +172,7 @@
                         <div class="block-18 text-center mb-4">
                             <div class="text">
                                 <strong class="number" data-number="300">0</strong>
-                                <span>Муваффақиятли саёҳатлар</span>
+                                <span>@Localizer["happyTravels1"]</span>
                             </div>
                         </div>
                     </div>
@@ -173,7 +180,7 @@
                         <div class="block-18 text-center mb-4">
                             <div class="text">
                                 <strong class="number" data-number="24000">0</strong>
-                                <span>Бахтли сайёҳатчи</span>
+                                <span> @Localizer["happyTraveler1"]</span>
                             </div>
                         </div>
                     </div>
@@ -181,7 +188,7 @@
                         <div class="block-18 text-center mb-4">
                             <div class="text">
                                 <strong class="number" data-number="200">0</strong>
-                                <span>Ўрганилган жой</span>
+                                <span> @Localizer["learnedPlace1"]</span>
                             </div>
                         </div>
                     </div>
@@ -196,7 +203,7 @@
     <div class="container">
         <div class="row justify-content-center pb-4">
             <div class="col-md-12 heading-section text-center ftco-animate">
-                <h2 class="mb-4">Енг Яхши Манзил</h2>
+                <h2 class="mb-4">@Localizer["address"]</h2>
             </div>
         </div>
         <div class="row">
@@ -248,7 +255,7 @@
     <div class="container">
         <div class="row justify-content-center pb-4">
             <div class="col-md-12 heading-section text-center ftco-animate">
-                <h2 class="mb-4">Екскурсия манзили</h2>
+                <h2 class="mb-4">@Localizer["ecuscursion"]</h2>
             </div>
         </div>
         <div class="row">
@@ -256,14 +263,14 @@
                 <div class="project-wrap">
                     <a href="#" class="img" style="background-image: url(images/destination-1.jpg);"></a>
                     <div class="text p-4">
-                        <span class="price">Санторини ороли</span>
-                        <span class="days">Екскурсия 8 кун давом етади</span>
-                        <h3><a href="#">Греция , Санторини ороли</a></h3>
-                        <p class="location"><span class="ion-ios-map"></span> Анъанавий оқ архитектура ва устидаги кўк гумбазли юнон православ черковлари</p>
+                        <span class="price">@Localizer["island"]</span>
+                        <span class="days">@Localizer["ecuscursion1"]</span>
+                        <h3><a href="#"> @Localizer["island1"]</a></h3>
+                        <p class="location"><span class="ion-ios-map"></span>@Localizer["architecture"]</p>
                         <ul>
                             <li><span class="flaticon-shower"></span>2</li>
                             <li><span class="flaticon-king-size"></span>3</li>
-                            <li><span class="flaticon-mountains"></span>Тогъ яқинида</li>
+                            <li><span class="flaticon-mountains"></span>@Localizer["mountain"]</li>
                         </ul>
                     </div>
                 </div>
@@ -273,9 +280,9 @@
                     <a href="#" class="img" style="background-image: url(images/destination-2.jpg);"></a>
                     <div class="text p-4">
                         <span class="price">Ниццы Пляжи</span>
-                        <span class="days">Екскурсия 8 кун давом етади</span>
-                        <h3><a href="#">Франция, Ўрта ер денгизи</a></h3>
-                        <p class="location"><span class="ion-ios-map"></span> Илиқ денгиз, мазали таомлар ва турли хил ўйин-кулгилар билан кутиб олади.</p>
+                        <span class="days">@Localizer["ecuscursion2"]</span>
+                        <h3><a href="#">@Localizer["France"]</a></h3>
+                        <p class="location"><span class="ion-ios-map"></span> @Localizer["theSea"]</p>
                         <ul>
                             <li><span class="flaticon-shower"></span>2</li>
                             <li><span class="flaticon-king-size"></span>3</li>
@@ -288,14 +295,14 @@
                 <div class="project-wrap">
                     <a href="#" class="img" style="background-image: url(images/destination-3.jpg);"></a>
                     <div class="text p-4">
-                        <span class="price">Пертшир минтақаси</span>
-                        <span class="days">Екскурсия 8 кун давом етади</span>
+                        <span class="price">@Localizer["perthshire"]</span>
+                        <span class="days">@Localizer["ecuscursion3"]</span>
                         <h3><a href="#">Шатландия</a></h3>
-                        <p class="location"><span class="ion-ios-map"></span> Пиёда саёҳат қилишга нима дейсиз?, бу имкониятни сизга Пертиш минтақаси беради, дўстларингиз билан бирга саёҳат қилинг</p>
+                        <p class="location"><span class="ion-ios-map"></span> @Localizer["onFoot"]</p>
                         <ul>
                             <li><span class="flaticon-shower"></span>2</li>
                             <li><span class="flaticon-king-size"></span>3</li>
-                            <li><span class="flaticon-sun-umbrella"></span>Кенгликлар</li>
+                            <li><span class="flaticon-sun-umbrella"></span>@Localizer["Widths"]</li>
                         </ul>
                     </div>
                 </div>
@@ -305,10 +312,10 @@
                 <div class="project-wrap">
                     <a href="#" class="img" style="background-image: url(images/destination-4.jpg);"></a>
                     <div class="text p-4">
-                        <span class="price">Бали ороли</span>
-                        <span class="days">Екскурсия 10 кун давом етади</span>
+                        <span class="price">@Localizer["TheIslandOfBali"]</span>
+                        <span class="days">@Localizer["ecuscursion4"]</span>
                         <h3><a href="#">Бали, Индонезия</a></h3>
-                        <p class="location"><span class="ion-ios-map"></span> Бали оролида яшаш учун қулай жой эканлигини қўшинг ва кўплаб чет элликлар бу эрда нафақага чиқишни танлаган бўлса, ажабланарли эмас.</p>
+                        <p class="location"><span class="ion-ios-map"></span> @Localizer["livingOnAnIsland"]</p>
                         <ul>
                             <li><span class="flaticon-shower"></span>2</li>
                             <li><span class="flaticon-king-size"></span>3</li>
@@ -321,14 +328,14 @@
                 <div class="project-wrap">
                     <a href="#" class="img" style="background-image: url(images/destination-5.jpg);"></a>
                     <div class="text p-4">
-                        <span class="price">Блаузее кўли</span>
-                        <span class="days">Екскурсия 8 кун давом етади</span>
+                        <span class="price"> @Localizer["Blausee"]</span>
+                        <span class="days">@Localizer["ecuscursion5"]</span>
                         <h3><a href="#">Швейцария</a></h3>
-                        <p class="location"><span class="ion-ios-map"></span> Швейцариядаги энг мовий кўл. Алп тоғлари мамлакати гўзал кўлларга бой</p>
+                        <p class="location"><span class="ion-ios-map"></span> @Localizer["Switzerland"]</p>
                         <ul>
                             <li><span class="flaticon-shower"></span>2</li>
                             <li><span class="flaticon-king-size"></span>3</li>
-                            <li><span class="flaticon-sun-umbrella"></span>Тогъ яқинида</li>
+                            <li><span class="flaticon-sun-umbrella"></span>@Localizer["mountain2"]</li>
                         </ul>
                     </div>
                 </div>
@@ -337,14 +344,14 @@
                 <div class="project-wrap">
                     <a href="#" class="img" style="background-image: url(images/destination-6.jpg);"></a>
                     <div class="text p-4">
-                        <span class="price">Cha Choeng шаҳри</span>
-                        <span class="days">Екскурсия 8 кун давом етади</span>
+                        <span class="price"> @Localizer["city1"]</span>
+                        <span class="days">@Localizer["ecuscursion6"]</span>
                         <h3><a href="#">Таиланд</a></h3>
                         <p class="location"><span class="ion-ios-map"></span> Cha Choeng, Таиланд</p>
                         <ul>
                             <li><span class="flaticon-shower"></span>2</li>
                             <li><span class="flaticon-king-size"></span>3</li>
-                            <li><span class="flaticon-sun-umbrella"></span>шаҳар</li>
+                            <li><span class="flaticon-sun-umbrella"></span>город</li>
                         </ul>
                     </div>
                 </div>
@@ -357,7 +364,7 @@
     <div class="container">
         <div class="row justify-content-center pb-4">
             <div class="col-md-7 text-center heading-section ftco-animate">
-                <h2 class="mb-4">Туристик шарҳлар</h2>
+                <h2 class="mb-4">@Localizer["City2"]</h2>
             </div>
         </div>
         <div class="row ftco-animate">
@@ -448,7 +455,7 @@
     <div class="container">
         <div class="row justify-content-center pb-4">
             <div class="col-md-12 heading-section text-center ftco-animate">
-                <h2 class="mb-4">Сўнгги хабар</h2>
+                <h2 class="mb-4">@Localizer["messages"]</h2>
             </div>
         </div>
         <div class="row d-flex">
@@ -463,11 +470,11 @@
                             </div>
                             <div class="two">
                                 <span class="yr">2024</span>
-                                <span class="mos">Аугуст</span>
+                                <span class="mos">Август</span>
                             </div>
                         </div>
-                        <h3 class="heading"><a href="#">Биз билан саёҳат янада хамёнбоп нархларда. Анталия сизни ўзининг гўзал масканлари билан лол қолдиради</a></h3>
-                        <p>Уйингиз соҳил олдида жойлашган, қуёш нурлари соҳил бўйлаб сизнинг деразангизда.</p>
+                        <h3 class="heading"><a href="#">@Localizer["Antalya"]</a></h3>
+                        <p>@Localizer["theBeach"]</p>
                     </div>
                 </div>
             </div>
@@ -485,8 +492,8 @@
                                 <span class="mos">Август</span>
                             </div>
                         </div>
-                        <h3 class="heading"><a href="#">Биз билан саёҳат қилинг, бизга боғланинг ва таъсуроднинг янги саҳифасини бирга очамиз</a></h3>
-                        <p>Уйғонганингизда гўзал манзаралар, ўсимликлар ва қушлар сиз билан тонгни қарши олишади.</p>
+                        <h3 class="heading"><a href="#">@Localizer["trip"]</a></h3>
+                        <p>@Localizer["landscape"]</p>
                     </div>
                 </div>
             </div>
@@ -504,14 +511,15 @@
                                 <span class="mos">Август</span>
                             </div>
                         </div>
-                        <h3 class="heading"><a href="#">Гўзал шаҳарлар сизни ўз жозибаси ва виқори билан лол қолдириради</a></h3>
-                        <p>Қуёшнинг ботишини оилангиз ва яқинларингиз билан кўзатиш жуда мароқли.</p>
+                        <h3 class="heading"><a href="#">@Localizer["attraction"]</a></h3>
+                        <p>@Localizer["TheSun"]</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 <script src="~/js/jquery.min.js"></script>
 <script src="~/js/jquery-migrate-3.0.1.min.js"></script>
 <script src="~/js/popper.min.js"></script>

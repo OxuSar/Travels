@@ -1,0 +1,48 @@
+﻿.moving-text-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.moving-text {
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    animation: moveIn 3s ease forwards;
+}
+
+.top {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 0.5s;
+}
+
+.left {
+    left: -100%;
+    top: 50%;
+    transform: translateY(-50%);
+    animation-delay: 1s;
+}
+
+.bottom {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 1.5s;
+}
+
+.right {
+    right: -100%;
+    top: 50%;
+    transform: translateY(-50%);
+    animation-delay: 2s;
+}
+
+@keyframes moveIn {
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}

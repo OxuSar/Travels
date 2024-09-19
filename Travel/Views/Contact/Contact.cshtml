@@ -27,8 +27,8 @@
                         <div class="icon d-flex align-items-center justify-content-center">
                             <span class="icon-map-signs"></span>
                         </div>
-                        <h3 class="mb-2">Address</h3>
-                        <p>Хоразим вилояти Ургач шаҳар Нукус кўча 1а 22 уй</p>
+                        <h3 class="mb-2">@Localizer["Adress"]</h3>
+                        <p>@Localizer["city"]</p>
                     </div>
                 </div>
                 <div class="col-md-3 d-flex">
@@ -36,7 +36,7 @@
                         <div class="icon d-flex align-items-center justify-content-center">
                             <span class="icon-phone2"></span>
                         </div>
-                        <h3 class="mb-2">Contact Number</h3>
+                        <h3 class="mb-2"> @Localizer["set"]</h3>
                         <p><a href="tel://1234567920">+998 77 318 95 91</a></p>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                         <div class="icon d-flex align-items-center justify-content-center">
                             <span class="icon-paper-plane"></span>
                         </div>
-                        <h3 class="mb-2">Telegram Address</h3>
+                        <h3 class="mb-2">@Localizer["telegramm"]</h3>
                         <p><a href="https://t.me/x_kavsartour" target="_blank" class="telegram-link">KavsarAviaTour</a></p>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                         <div class="icon d-flex align-items-center justify-content-center">
                             <span class="fas fa-envelope"></span>
                         </div>
-                        <h3 class="mb-2">Email Address</h3>
+                        <h3 class="mb-2">@Localizer["emil"]</h3>
                         <p><a href="mailto:x_kavsartour@bk.ru" class="telegram-link">x_kavsartour@bk.ru</a></p>
                     </div>
                 </div>
@@ -69,25 +69,25 @@
             <div class="col-md-6 order-md-last d-flex">
                 <form action="#" class="bg-light p-5 contact-form">
                     <div class="form-group">
-                        <input id="name" type="text" class="form-control" placeholder="Your Name">
+                            <input id="name" type="text" class="form-control" placeholder="@Localizer["phone"]">
                     </div>
                     <div class="form-group">
-                        <input id="email" type="text" class="form-control" placeholder=" Your Telegram Addres">
+                            <input id="email" type="text" class="form-control" placeholder=" Telegram @@Адрес">
                     </div>
 
                     <div class="form-group">
-                        <textarea id="message"  cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                            <textarea id="message" cols="30" rows="7" class="form-control" placeholder="@Localizer["question"]"></textarea>
                     </div>
                     <div class="form-group">
-                        <input id="send" type="submit" value="Send Message" class="btn btn-primary py-3 px-5 SendTax">
+                        <input id="send" type="submit" value="@Localizer["sent"]" class="btn btn-primary py-3 px-5 SendTax">
                     </div>
                 </form>
 
             </div>
 
-                <div class="col-md-6 d-flex">
+               @*  <div class="col-md-6 d-flex">
                     <div id="map" class="bg-white"></div>
-                </div>
+                </div> *@
             </div>
         </div>
     </section>

@@ -1,9 +1,13 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>KavsarAviaTour</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="icon" href="~/images/kavsarfavicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -25,44 +29,163 @@
     <link rel="stylesheet" href="~/css/flaticon.css">
     <link rel="stylesheet" href="~/css/icomoon.css">
     <link rel="stylesheet" href="~/css/style.css">
+    <style>
+        .styleFiel {
+            background-size: cover;
+            background-position: 50% 50%;
+            box-shadow: 0 0px 0px;
+            /*transition:0.5s;*/
+            /*display:inline-block;*/
+           /*  background-color: #00A2FF; */
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: #f1f1f1;
+            color: black;
+            padding: 8px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .flag-icon {
+            width: 30px;
+            height: 26px;
+            margin-right: 8px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #f1f1f1;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #ddd;
+        }
+
+        .lang-btn {
+            padding: 5px 10px;
+            font-size: 14px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+            .lang-btn:hover {
+                background-color: #0056b3;
+            }
+           
+    </style>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-        <div class="container">
-            <img src="~/images/logoo-removebg-preview.png" alt="KavsarAviaTour Logo" style="height: 40px; width:250px;" />
-            <a class="navbar-brand" href="index.html">KavsarAviaTour <span>Travel Agency</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="oi oi-menu"></span> Menu
-            </button>
+        <div class="row col-md-12 styleFiel">
+            <img src="~/images/logoo-removebg-preview.png" alt="KavsarAviaTour Logo" style="height: 130px; width:260px;" />
 
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav ml-auto">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a asp-controller="Home" asp-action="Index" class="nav-link">
-                                <i class="fas fa-home"></i> Асосий
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a asp-controller="About" asp-action="About" class="nav-link">
-                                <i class="fas fa-info-circle"></i> Биз ҳақимизда
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a asp-controller="Blog" asp-action="Blog" class="nav-link">
-                                <i class="fas fa-plane"></i> Саёҳатлар
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a asp-controller="Contact" asp-action="Contact" class="nav-link">
-                                <i class="fas fa-envelope"></i> Алоқа
-                            </a>
-                        </li>
-
-                    </ul>
-                </ul>
+            <div class="ml-3">
+                <p style="font-size: 40px; color:#0494A5; margin: 0; filter: brightness(1.5); margin-top: 20px;">KAVSAR AVIA TOUR</p>
             </div>
-        </div>
+
+
+            <div class="collapse navbar-collapse d-flex justify-content-center align-items-center" id="ftco-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a asp-controller="Home" asp-action="Index" class="nav-link">
+                            <i class="fas fa-home"></i> @Localizer["home"]
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="About" asp-action="About" class="nav-link">
+                            <i class="fas fa-info-circle"></i> @Localizer["aboutMe"]
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="Blog" asp-action="Blog" class="nav-link">
+                            <i class="fas fa-plane"></i> @Localizer["trips"]
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-controller="Contact" asp-action="Contact" class="nav-link">
+                            <i class="fas fa-envelope"></i> @Localizer["Communication"]
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- Telefon raqam ikonka va raqam bilan -->
+                <div class="ml-4 d-flex align-items-center">
+                    <i class="fas fa-phone-alt" style="font-size: 20px; color: #ADD8E6;"></i>
+                    <span class="ml-2 btn btn-primary" style="font-size: 20px; background-color: #0088cc; border: none;">+998 (77) 318-95-91</span>
+                </div>
+
+                <!-- Telegram ikonka va manzil -->
+                <div class="ml-4 d-flex align-items-center">
+                    <a href="https://t.me/x_kavsartour" target="_blank" class="btn btn-primary" style="background-color: #0088cc; border: none;">
+                        <i class="fab fa-telegram-plane" style="font-size: 20px;"></i>
+                        <span class="ml-2" style="font-size: 20px;">Kavsar Avia Tour</span>
+                    </a>
+                </div>
+               
+                @* <div class="dropdown">
+                    <button class="dropbtn">
+                        <img src="uzbekistan-flag.png" alt="UZ" class="flag-icon"> UZ
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <img src="uzbekistan-flag.png" alt="UZ" class="flag-icon"> Uzbek
+                        </a>
+                        <a href="#">
+                            <video class="flag-icon" autoplay loop muted>
+                                <source src="https://cdnl.iconscout.com/lottie/premium/thumb/russian-6261234-5188040.mp4" type="video/mp4">
+                            </video> Russian
+                        </a>
+                    </div>
+                </div> *@
+                <div class="ml-5">
+                    <button class="lang-btn" id="langBtnUz" onclick="setLanguage('uz')">UZ</button>
+                    <button class="lang-btn" id="langBtnRu" onclick="setLanguage('ru')">RU</button>
+                </div>
+
+               @*  <ul class="dropdown-menu" aria-labelledby="navbarDropDown">
+                    <li><a class="dropdown-item" href="/Lang?culture=uz">Uz</a></li>
+                    <li><a class="dropdown-item" href="/Lang?culture=ru"></a></li>
+                </ul> *@
+               
+
+            </div>
+
+
+
     </nav>
     <!-- END nav -->
     <div class="container col-md-12">
@@ -78,9 +201,8 @@
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">KavsarAviaTour</h2>
                         <p>
-                            KavsarAviaTour сизнинг қулай ва мароқли саёҳатингиз учун янгиликлар ва чегирмалар қилишда тўхтамайди.
-                            Биз билан ҳамкорлик қилинг ва дунё бўйлаб завқли саёҳатингизни бизга ишониб топширинг.
-                            KavsarAviaTour сиз ва яқинларингиз учун энг муносибини таклиф қилади.
+                            @Localizer["KavsarAviaTourText"]
+                            
                         </p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                             <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -91,36 +213,36 @@
                 </div>
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4 ml-md-5">
-                        <h2 class="ftco-heading-2">Ахборот</h2>
+                        <h2 class="ftco-heading-2">@Localizer["Information"]</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="py-2 d-block">Онлайн савол жавоб</a></li>
-                            <li><a href="#" class="py-2 d-block">Умумий саволлар</a></li>
-                            <li><a href="#" class="py-2 d-block">Брон қлиш шартлари</a></li>
-                            <li><a href="#" class="py-2 d-block">Махфийлик ва сиёсат</a></li>
-                            <li><a href="#" class="py-2 d-block">Маблағни қайтариш тартиблари</a></li>
-                            <li><a href="#" class="py-2 d-block">Хозироқ биз билан боғланинг</a></li>
+                            <li><a href="#" class="py-2 d-block">@Localizer["Online"]</a></li>
+                            <li><a href="#" class="py-2 d-block">@Localizer["General"]</a></li>
+                            <li><a href="#" class="py-2 d-block">@Localizer["reservation"]</a></li>
+                            <li><a href="#" class="py-2 d-block">@Localizer["Confidentiality"]</a></li>
+                            <li><a href="#" class="py-2 d-block">@Localizer["return"]</a></li>
+                            <li><a href="#" class="py-2 d-block">@Localizer["connection"]</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Тажриба</h2>
+                        <h2 class="ftco-heading-2">@Localizer["experience"]</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="py-2 d-block">Саёҳат</a></li>
-                            <li><a href="#" class="py-2 d-block">Меҳмонхона ва ресторан</a></li>
-                            <li><a href="#" class="py-2 d-block">Пляж</a></li>
-                            <li><a href="#" class="py-2 d-block">Табиат</a></li>
-                            <li><a href="#" class="py-2 d-block">Кемпинг</a></li>
+                            <li><a href="#" class="py-2 d-block">@Localizer["trip"]</a></li>
+                            <li><a href="#" class="py-2 d-block">@Localizer["hotel"]</a></li>
+                            <li><a href="#" class="py-2 d-block">@Localizer["beach"]</a></li>
+                            <li><a href="#" class="py-2 d-block">@Localizer["nature"]</a></li>
+                            <li><a href="#" class="py-2 d-block">@Localizer["camping"]</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Биз билан боғланинг</h2>
+                        <h2 class="ftco-heading-2"> @Localizer["contactUs"]</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">Хоразим вилояти, Урганч шаҳар, Нукус кўча, 1а 22 уй</span></li>
-                                <li><span class="icon icon-map-marker"></span><span class="text">Тошкент шаҳар, Мирзо Улуғбек, Муҳаммад Юсуф 45</span></li>
+                                <li><span class="icon icon-map-marker"></span><span class="text">@Localizer["adress"]</span></li>
+                                <li><span class="icon icon-map-marker"></span><span class="text">@Localizer["adress1"]</span></li>
                                 <li><a href="#"><span class="icon icon-phone"></span><span class="text">+998 77 318 95 91</span></a></li>
                                 <li><a href="#"><span class="icon icon-envelope"></span><span class="text">x_kavsartour@bk.ru</span></a></li>
                             </ul>
@@ -146,3 +268,31 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+@* <script>
+    function changeLanguage(select) 
+    
+        var url = select.value;
+        window.location.href = url;
+    }
+    
+
+
+</script> *@
+<script>
+    function setLanguage(lang) {
+        // Tilni cookie'da saqlash
+        document.cookie = "ui-culture=" + lang + "; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+
+        // Hozirgi sahifa URL'ini o'qib, til parametrini qo'shamiz
+        var currentPath = window.location.pathname;
+        var currentQuery = window.location.search;
+
+        var params = new URLSearchParams(currentQuery);
+        params.delete('ui-culture');  // Mavjud til parametrini o'chirish
+        params.append('ui-culture', lang);  // Yangi til parametrini qo'shish
+
+        var newUrl = currentPath + '?' + params.toString();
+        window.location.href = newUrl;  // Sahifa qayta yuklanadi
+    }
+</script>

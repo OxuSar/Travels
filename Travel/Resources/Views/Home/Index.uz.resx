@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="address" xml:space="preserve">
+    <value>Саёҳат учун энг яхши манзиллар</value>
+  </data>
+  <data name="Antalya" xml:space="preserve">
+    <value>Биз билан саёҳат янада хамёнбоп нархларда. Анталия сизни ўзининг гўзал масканлари билан лол қолдиради</value>
+  </data>
+  <data name="architecture" xml:space="preserve">
+    <value>Анъанавий оқ архитектура ва устидаги кўк гумбазли юнон православ черковлари</value>
+  </data>
+  <data name="attraction" xml:space="preserve">
+    <value>Гўзал шаҳарлар сизни ўз жозибаси ва виқори билан лол қолдириради</value>
+  </data>
+  <data name="Blausee" xml:space="preserve">
+    <value>Блаузее кўли</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Шаҳар тарихи ва маданяти сизга тўлиқ таъсурод қолдириш мақсадида сизга шахсий гит ёллаш хизматларидан фойдаланиш имкони.</value>
+  </data>
+  <data name="city1" xml:space="preserve">
+    <value>Cha Choeng шаҳри</value>
+  </data>
+  <data name="City2" xml:space="preserve">
+    <value>Туристик шарҳлар</value>
+  </data>
+  <data name="ecuscursion" xml:space="preserve">
+    <value>Экскурсия манзили</value>
+  </data>
+  <data name="ecuscursion1" xml:space="preserve">
+    <value>Экскурсия 8 кун давом етади</value>
+  </data>
+  <data name="ecuscursion2" xml:space="preserve">
+    <value>Экскурсия 8 кун давом етади</value>
+  </data>
+  <data name="ecuscursion3" xml:space="preserve">
+    <value>Экскурсия 8 кун давом етади</value>
+  </data>
+  <data name="ecuscursion4" xml:space="preserve">
+    <value>Экскурсия 10 кун давом етади</value>
+  </data>
+  <data name="ecuscursion5" xml:space="preserve">
+    <value>Экскурсия 8 кун давом етади</value>
+  </data>
+  <data name="ecuscursion6" xml:space="preserve">
+    <value>Экскурсия 8 кун давом етади</value>
+  </data>
+  <data name="events" xml:space="preserve">
+    <value>Тадбирлар</value>
+  </data>
+  <data name="France" xml:space="preserve">
+    <value>Франция, Ўрта ер денгизи</value>
+  </data>
+  <data name="git" xml:space="preserve">
+    <value>Шахсий гид</value>
+  </data>
+  <data name="good" xml:space="preserve">
+    <value>Саёҳатизгиз давомида кўнгил очар тадбирлардан роҳатланинг, қизиқарли ўйинлар ва таъсуродли чиқишлардан завқланинг.</value>
+  </data>
+  <data name="happyTraveler1" xml:space="preserve">
+    <value>Бахтли сайёҳатчи</value>
+  </data>
+  <data name="happyTravels1" xml:space="preserve">
+    <value>Муваффақиятли саёҳатлар</value>
+  </data>
+  <data name="island" xml:space="preserve">
+    <value>Санторини ороли</value>
+  </data>
+  <data name="island1" xml:space="preserve">
+    <value>Греция , Санторини ороли</value>
+  </data>
+  <data name="landscape" xml:space="preserve">
+    <value>Уйғонганингизда гўзал манзаралар, ўсимликлар ва қушлар сиз билан тонгни қарши олишади.</value>
+  </data>
+  <data name="learnedPlace1" xml:space="preserve">
+    <value>Ўрганилган жой</value>
+  </data>
+  <data name="livingOnAnIsland" xml:space="preserve">
+    <value>Бу ер, шунчаки сокин пляжда дам олиш учун учиб келишга арзийди. Зеро, дам олиш ҳудудларининг инфратузилмаси жуда яхши ривожланган.</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>Жойлашув Менежери</value>
+  </data>
+  <data name="Locations1" xml:space="preserve">
+    <value>Дам олиш муддатида жойлашувнинг энг гўзал масканларидан тўлиқ баҳрамант бўлишингиз учун масъул ходимлар бириктирилиши.</value>
+  </data>
+  <data name="Maldiv" xml:space="preserve">
+    <value>Мальдив оролларида бўлганмисиз? Саёҳат қилиш вақти келди</value>
+  </data>
+  <data name="messages" xml:space="preserve">
+    <value>Сўнги янгиликлар</value>
+  </data>
+  <data name="mountain" xml:space="preserve">
+    <value>Тоғ яқинида</value>
+  </data>
+  <data name="mountain2" xml:space="preserve">
+    <value>Тоғ яқинида</value>
+  </data>
+  <data name="onFoot" xml:space="preserve">
+    <value>Пиёда саёҳат қилишга нима дейсиз?, бу имкониятни сизга Пертиш минтақаси беради, дўстларингиз билан бирга саёҳат қилинг</value>
+  </data>
+  <data name="organizational" xml:space="preserve">
+    <value>Ташкилли саёҳатлар</value>
+  </data>
+  <data name="organizational1" xml:space="preserve">
+    <value>Саёҳат давомида меморий обидалар, шаҳарнинг кўнгил очар майдонлари, турли хил егзотик муҳитдан баҳрамант бўлиш имконияти.</value>
+  </data>
+  <data name="partner1" xml:space="preserve">
+    <value>Биз билан ҳамкорликда бўлган мижозларимизни ишончлари бизнинг мижозларимизга қулайлик ва ажойиб ҳордиқ чиқаришлари учун жамоа бўлиб ҳаракат қилишимиздан.</value>
+  </data>
+  <data name="perthshire" xml:space="preserve">
+    <value>Пертшир минтақаси</value>
+  </data>
+  <data name="Switzerland" xml:space="preserve">
+    <value>Швейцариядаги энг мовий кўл. Алп тоғлари мамлакати гўзал кўлларга бой</value>
+  </data>
+  <data name="theBeach" xml:space="preserve">
+    <value>Уйингиз соҳил олдида жойлашган, қуёш нурлари соҳил бўйлаб сизнинг деразангизда.</value>
+  </data>
+  <data name="TheIslandOfBali" xml:space="preserve">
+    <value>Бали ороли</value>
+  </data>
+  <data name="theSea" xml:space="preserve">
+    <value>Илиқ денгиз, мазали таомлар ва турли хил ўйин-кулгилар билан кутиб олади.</value>
+  </data>
+  <data name="TheSun" xml:space="preserve">
+    <value>Қуёшнинг ботишини оилангиз ва яқинларингиз билан кўзатиш жуда мароқли.</value>
+  </data>
+  <data name="travel" xml:space="preserve">
+    <value>Дунёнинг исталган бурчагига саёҳат қилинг</value>
+  </data>
+  <data name="Travelss" xml:space="preserve">
+    <value>Саёҳатлар бўлимига ўтинг</value>
+  </data>
+  <data name="travelWithUs" xml:space="preserve">
+    <value>Биз билан саёҳатингизни унутилмас ва хавфсиз қилинг</value>
+  </data>
+  <data name="trip" xml:space="preserve">
+    <value>Биз билан саёҳат қилинг, бизга боғланинг ва таъсуроднинг янги саҳифасини бирга очамиз</value>
+  </data>
+  <data name="welcome" xml:space="preserve">
+    <value>xush kelibsiz</value>
+  </data>
+  <data name="Widths" xml:space="preserve">
+    <value>Кенгликлар</value>
+  </data>
+  <data name="withUs" xml:space="preserve">
+    <value>Биз билан саёҳатингизни унутилмас қилинг</value>
+  </data>
+  <data name="world" xml:space="preserve">
+    <value>Эртаклардаги сув ости дунёси, қуёшда порлаётган қумли ёки ҳайратда қолдирувчи мовий чироқлар билан қопланган мовий сувли пляжлар, янги денгиз маҳсулотлари ва чинакам қулай дам олиш.</value>
+  </data>
+  <data name="world1" xml:space="preserve">
+    <value>Бу ерда сиз сувнинг 20 метр чуқурлигида ўзингизни дайвингда синаб кўришингиз, дельфинларни яқиндан кўриш учун океанда қайиқ билан ҳаракатланишингиз,
+жонли мусиқа остида қуёш ботишини томоша қилишингиз, СПАда ҳордиқ чиқаришингиз ва албатта сёрфинг, гидросикл каби сув спорти турларидан фойдаланишингиз мумкин.</value>
+  </data>
+</root>

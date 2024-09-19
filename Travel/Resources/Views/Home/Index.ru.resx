@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="address" xml:space="preserve">
+    <value>Лучшие направления для путешествий</value>
+  </data>
+  <data name="Antalya" xml:space="preserve">
+    <value>Путешествуйте с нами по более доступным ценам. Анталия поразит вас своей красотой</value>
+  </data>
+  <data name="architecture" xml:space="preserve">
+    <value>Греческие православные церкви с традиционной белой архитектурой и голубым куполом над головой</value>
+  </data>
+  <data name="attraction" xml:space="preserve">
+    <value>Красивые города поразят вас своим очарованием и энергией</value>
+  </data>
+  <data name="Blausee" xml:space="preserve">
+    <value>Озеро Блаузи</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Знакомство с историей и культурой города, возможность воспользоваться услугами по найму личного гита для того, чтобы оставить вам полноценное заведение.</value>
+  </data>
+  <data name="city1" xml:space="preserve">
+    <value>Город Cha Choeng</value>
+  </data>
+  <data name="City2" xml:space="preserve">
+    <value>Отзывы туристов</value>
+  </data>
+  <data name="ecuscursion" xml:space="preserve">
+    <value>Адрес экскурсии</value>
+  </data>
+  <data name="ecuscursion1" xml:space="preserve">
+    <value>Экскурсия продлится 8 дней</value>
+  </data>
+  <data name="ecuscursion2" xml:space="preserve">
+    <value>Экскурсия продлится 8 дней</value>
+  </data>
+  <data name="ecuscursion3" xml:space="preserve">
+    <value>Экскурсия продлится 8 дней</value>
+  </data>
+  <data name="ecuscursion4" xml:space="preserve">
+    <value>Экскурсия продлится 10 дней</value>
+  </data>
+  <data name="ecuscursion5" xml:space="preserve">
+    <value>Экскурсия продлится 8 дней</value>
+  </data>
+  <data name="ecuscursion6" xml:space="preserve">
+    <value>Экскурсия продлится 8 дней</value>
+  </data>
+  <data name="events" xml:space="preserve">
+    <value>Мероприятия</value>
+  </data>
+  <data name="France" xml:space="preserve">
+    <value>Франция, Средиземноморье</value>
+  </data>
+  <data name="git" xml:space="preserve">
+    <value>Личный гид</value>
+  </data>
+  <data name="good" xml:space="preserve">
+    <value>Наслаждайтесь интересными мероприятиями во время вашего путешествия, наслаждайтесь веселыми играми и благотворительными выступлениями.</value>
+  </data>
+  <data name="happyTraveler1" xml:space="preserve">
+    <value>Счастливый путешественник</value>
+  </data>
+  <data name="happyTravels1" xml:space="preserve">
+    <value>Успешные туры</value>
+  </data>
+  <data name="island" xml:space="preserve">
+    <value>Остров Санторини</value>
+  </data>
+  <data name="island1" xml:space="preserve">
+    <value>Греция, остров Санторини</value>
+  </data>
+  <data name="landscape" xml:space="preserve">
+    <value>Когда вы проснетесь, прекрасные пейзажи, растения и птицы встретят рассвет вместе с вами.</value>
+  </data>
+  <data name="learnedPlace1" xml:space="preserve">
+    <value>Изученное местоположение</value>
+  </data>
+  <data name="livingOnAnIsland" xml:space="preserve">
+    <value>Это та земля, на которую стоит слетать, чтобы просто отдохнуть на тихом пляже. Ведь инфраструктура зон отдыха здесь развита очень хорошо.</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>Менеджер по местоположению</value>
+  </data>
+  <data name="Locations1" xml:space="preserve">
+    <value>В период отдыха к вам будет прикреплен ответственный персонал, чтобы вы могли быть полностью в курсе самых красивых мест этого района.</value>
+  </data>
+  <data name="Maldiv" xml:space="preserve">
+    <value>Вы были на Мальдивах? Пришло время путешествовать</value>
+  </data>
+  <data name="messages" xml:space="preserve">
+    <value>Последние новости</value>
+  </data>
+  <data name="mountain" xml:space="preserve">
+    <value>Возле горы</value>
+  </data>
+  <data name="mountain2" xml:space="preserve">
+    <value>Возле горы</value>
+  </data>
+  <data name="onFoot" xml:space="preserve">
+    <value>Как насчет того, чтобы путешествовать пешком?, такую возможность подарит вам регион Пертиш, путешествуйте со своими друзьями</value>
+  </data>
+  <data name="organizational" xml:space="preserve">
+    <value>Организованные туры</value>
+  </data>
+  <data name="organizational1" xml:space="preserve">
+    <value>Во время поездки увидите исторические построения, архитектура того века. А так же развлекательные зоны города, возможность насладиться разнообразной экзотической обстановкой города</value>
+  </data>
+  <data name="partner1" xml:space="preserve">
+    <value>Исходя из того, что мы действуем как единая команда, чтобы наши клиенты могли доверять нам в плане их удобства и отличного досуга.</value>
+  </data>
+  <data name="perthshire" xml:space="preserve">
+    <value>Регион Пертшир</value>
+  </data>
+  <data name="Switzerland" xml:space="preserve">
+    <value>Самое голубое озеро в Швейцарии. Страна Альп богата прекрасными озерами</value>
+  </data>
+  <data name="theBeach" xml:space="preserve">
+    <value>Ваш дом расположен напротив пляжа, солнечные лучи падают на ваш подоконник, выходящий на пляж.</value>
+  </data>
+  <data name="TheIslandOfBali" xml:space="preserve">
+    <value>Остров Бали</value>
+  </data>
+  <data name="theSea" xml:space="preserve">
+    <value>Здесь вас ждет теплое море, вкусная еда и разнообразные развлечения.</value>
+  </data>
+  <data name="TheSun" xml:space="preserve">
+    <value>Очень интересно наблюдать за закатом со своей семьей и близкими.</value>
+  </data>
+  <data name="travel" xml:space="preserve">
+    <value>Путешествуйте в любой уголок мира</value>
+  </data>
+  <data name="Travelss" xml:space="preserve">
+    <value>Перейдите в раздел  Путешествия</value>
+  </data>
+  <data name="travelWithUs" xml:space="preserve">
+    <value>Сделайте ваше путешествие с нами незабываемым и безопасным</value>
+  </data>
+  <data name="trip" xml:space="preserve">
+    <value>Путешествуйте с нами, свяжитесь с нами, и мы вместе откроем новую страницу заведения</value>
+  </data>
+  <data name="welcome" xml:space="preserve">
+    <value>добро пожаловать</value>
+  </data>
+  <data name="Widths" xml:space="preserve">
+    <value>Широты</value>
+  </data>
+  <data name="withUs" xml:space="preserve">
+    <value>Сделайте ваше путешествие с нами незабываемым</value>
+  </data>
+  <data name="world" xml:space="preserve">
+    <value>Сказочный подводный мир, пляжи с голубой водой, покрытые песком, или потрясающие голубые огни, сияющие на солнце, свежие морепродукты и по-настоящему уютный отдых.</value>
+  </data>
+  <data name="world1" xml:space="preserve">
+    <value>Здесь вы можете попробовать себя в плавании на глубине 20 метров, пересечь океан на лодке, чтобы увидеть дельфинов вблизи,
+под живую музыку полюбоваться закатом, повеселиться в спа-салоне и, конечно же, заняться водными видами спорта, такими как серфинг, катание на гидроциклах.</value>
+  </data>
+</root>

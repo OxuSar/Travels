@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Ankara" xml:space="preserve">
+    <value>Пойтахти ва Туркиянинг иккинчи энг машҳур шаҳри Анқара Ингури-Су қирғоғининг тик ёнбағрида кўтарилади. Бу замонавий Европа метрополияси бўлиб, у ерда кўп нарсалар шаҳар тарихини эслатади. Бу ерда сиз хет, фригияликлар, юнонлар, римликлар, византияликлар ва турклар цивилизациясининг эски қалъалари ва харобаларини топишингиз мумкин. Замонавий шаҳарда ҳукумат ва ҳукумат бинолари, йирик университетлар, ҳарбий базалар, консулликлар, жонли тунги ҳаёт ва энг қадимги Генклик боғи мавжуд.</value>
+  </data>
+  <data name="day" xml:space="preserve">
+    <value>Се, Жу, Як</value>
+  </data>
+  <data name="day1" xml:space="preserve">
+    <value>Чор, Як</value>
+  </data>
+  <data name="day2" xml:space="preserve">
+    <value>Ду, Па</value>
+  </data>
+  <data name="day3" xml:space="preserve">
+    <value>Па, Жу</value>
+  </data>
+  <data name="day4" xml:space="preserve">
+    <value>Чор, Ша</value>
+  </data>
+  <data name="Dubay" xml:space="preserve">
+    <value>Дубайда ҳамма нарса ҳашаматли кўринади: ultra замонавий Бурж Халифа осмонўпар биносидан тортиб, пештахталари олтин ва заргарлик буюмлари билан тўлиб тошган бозор ва савдо марказларигача. Бу ерда сиз ҳар қандай нарсани орзу қилишингиз ва орзуларингизни рўёбга чиқаришингиз мумкин. Нима бўлишидан қатъий назар: агар бино ичида тош мумкин, чўл тепалари бемақсад ёки шаҳар устида бир кабел машина минишингиз. Аммо бу ерда нафақат гламур ва экстремал ўйин-кулги мавжуд. 19-аср ўрталарида Дубай қандай бўлганини кўриш учун тарихий Ал-Фаҳиди туманининг айланма кўчаларида сайр қилинг. Ёки Jumeirah масжидига ташриф буюринг (бу мусулмон бўлмаганлар учун очиқ бўлган кам сонли масжидлардан бири) ва Амирликлар маданияти билан танишинг.</value>
+  </data>
+  <data name="Egypt" xml:space="preserve">
+    <value>Қизил денгиздаги турли хил денгиз ҳаёти турлари ва юзлаб маржон рифлари sharm ал-Шайхни шўнғин ва екотуризм ихлосмандлари учун айниқса жозибали қилади. Синай ярим оролида жойлашган ушбу шаҳарнинг туризмга асосланган иқтисодиёти сўнгги бир неча ўн йилликлар давомида сезиларли ўсишни бошдан кечирди, бу биринчи даражали курортларнинг пайдо бўлишига ва тунги ҳаётнинг гуллаб-яшнашига олиб келди. Рас Muhammad Миллий боғининг сувлари балиқ мактаблари ва ғалати ҳожатхоналар билан тўла – чунки 1981 йилда бўрон пайтида бу ерда санитария-тесисат билан юк кемаси чўкиб кетган.</value>
+  </data>
+  <data name="everyDay" xml:space="preserve">
+    <value>хар куни</value>
+  </data>
+  <data name="everyDay1" xml:space="preserve">
+    <value>хар куни</value>
+  </data>
+  <data name="everyDay2" xml:space="preserve">
+    <value>хар куни</value>
+  </data>
+  <data name="france" xml:space="preserve">
+    <value>Франция нафақат Париж. Бу ерда кўриш учун жуда кўп нарса бор: Loire водийсидаги ажойиб қалъалардан Прованснинг лаванта далаларига ва Франция Ривиерасининг пляжларига. Дунёга машҳур гастрономик санъат ва нозик винолар бу мамлакатнинг Алп ландшафтлари ва меъморий дурдоналари мукаммал қўшимча бўлади.</value>
+  </data>
+  <data name="Georgia" xml:space="preserve">
+    <value>Грузия пойтахти Тблиси шаҳри готик эртак саҳифаларидан тушганга ўхшайди. Чуқур водий ёрқин рангли миноралар, тошли кўчалар ва фаол ривожланаётган санъат учун фон бўлиб хизмат қилади. Грузия меҳмондўстлиги машҳур маҳаллий таомларга хизмат кўрсатадиган замонавий ва анъанавий ресторанлар билан ажралиб туради.</value>
+  </data>
+  <data name="Incho" xml:space="preserve">
+    <value>Шаҳар яриморолнинг ғарбий қирғоғида энг катта портга эга, шунингдек, мамлакатнинг энг катта аэропорти ҳам Инчхонда joylashgan.XXI асрда шаҳар халқаро бизнес марказига айланди, у мамлакатнинг энг баланд биноларидан бири бўлган Шимолий-Шарқий Осиё савдо биноси жойлашган Неw Сонгдо City футуристик юқори технологияли лойиҳаси марказига айланди.(305м)</value>
+  </data>
+  <data name="Istanbul" xml:space="preserve">
+    <value>Истанбул қадимийлик ва замонавийликни бирлаштирган шаҳар. Унинг атрофини маҳаллада (туманларда) ўрганиш яхшидир. 19-асрнинг Европа нафислигига тўла Беёглу тарихига шўнғинг ёки Муқаддас жойларни ўрганиш учун Султанаҳметга boring. Кейин юқори даражадаги дўконлар ва замонавий ресторанлар учун Нисантасига boring ёки замонавий Кадикойдаги бар ёки кафега қаранг. Бу фақат бошланиш: ўқинг ва сиз бошқа кўплаб тавсияларни топасиз.</value>
+  </data>
+  <data name="KualaLumpur" xml:space="preserve">
+    <value>Kuala-Lumpur кўчаларида сайр қилиб, сиз замонавий шаҳар атмосферасига шўнғишингиз ёки қадимги ўтмишга қайтишингиз мумкин. Ушбу шаҳарнинг пайдо бўлишининг ўзига хос хусусияти машҳур Petronas эгизак минораларидир. Ушбу 88 қаватли замонавий архитектура намуналари дунёдаги энг баланд эгизак бинолардир. Ва бу ерда Шри Маҳамариамман Temple эмас, Малайзияда энг қадимги Ҳинд Маъбад, нозик ўйма ва Ҳинд pantheon дан белгилар ранг-баранг ҳайкаллар билан безатилган бир муҳташам кўп қатламлик жабҳа билан. Дўконга борганингиздан сўнг, сиз замонавий ёрқин мега-савдо марказларида ажойиб вақт ўтказишингиз ёки маҳаллий бозорларга қарашингиз мумкин, у ерда сиз ноёб қўл санъатлари топасиз ва завқ билан савдолашишингиз мумкин.</value>
+  </data>
+  <data name="mom" xml:space="preserve">
+    <value>Кетма-кет учинчи ёзда онам ва мен Ёзимизни Дубайда ўтказамиз.
+ Бизнинг хонамиз ҳақида қисқача. Биз Дубайда premium пляж вилласини иккинчи марта ижарага олдик. Сувдаги вилладан фарқли ўлароқ, сиз пляждаги тўлқинларнинг овозини ешитишингиз мумкин, ва қозиқларга урилаётган сув чайқалишлари емас. Аммо сувдаги виллалар полда қизиқарли shisha деразага ега. У ердаги балиқларга қойил қолиш ажойиб. Аммо биз учун тўлқинларнинг овози янада ёқимли, шунингдек, ўзимизнинг қум пляжимиз, шунинг учун биз пляж вариантини афзал кўрамиз.</value>
+  </data>
+  <data name="Narita" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NewYork" xml:space="preserve">
+    <value>Енг баланд осмонўпар бинолар, энг йирик музейлар, энг тоза pizza. Нью-Йоркда мутлақо ҳамма нарса бор. Нима учун бу Қўшма Штатларда энг кўп ташриф буюриладиган жой эканлигини тушуниш осон: сиз тарихий жойларни ўрганишни, Бродвей спектаклини томоша қилишни ёки Бруклин кўчаларида юришни хоҳлайсизми, буни қилишнинг ҳеч қандай ёмон жойи йўқ — ва ҳар сафар борганингизда кашф этинг.</value>
+  </data>
+  <data name="String" xml:space="preserve">
+    <value>Бутун дунёдан рейсларни қабул қиладиган худди шу номдаги халқаро аеропорт кичик, аммо жонли шаҳарда жойлашган. Ва бу ерда сиз Едо даврида мамлакат қандай бўлганини еслашингиз, барча ёшдаги кўплаб музейлар ва тадбирларга ташриф буюришингиз мумкин. Кўпчилик бу шаҳарни аеропорти учун билади, аммо бу ерда ҳали ҳам жуда кўп қизиқарли нарсалар мавжуд. Шаҳар ҳаёти ёдгорлик дўконлари ва илон савдо расталари ва катта Шинсе-жи ибодатхонаси мажмуаси билан ўралган Омотесандо кўчаси атрофида жойлашган. Наритадан унчалик узоқ бўлмаган жойда тарихий Савара шаҳри, Босо но Мура очиқ осмон остидаги музейи ва Шисуи Premium outlets жойлашган бўлиб, у ерда сизни ажойиб харидлар кутмоқда.</value>
+  </data>
+  <data name="travel" xml:space="preserve">
+    <value>Саёҳат учун таклифлар</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>Сешанба</value>
+  </data>
+  <data name="Tuesday1" xml:space="preserve">
+    <value>Сешанба</value>
+  </data>
+  <data name="Tuesday2" xml:space="preserve">
+    <value>Сешанба</value>
+  </data>
+  <data name="Tuesday3" xml:space="preserve">
+    <value>Сешанба</value>
+  </data>
+</root>

@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.AspNetCore.Mvc.RazorPages;
 namespace Travel.Controllers
 {
     public class AboutController : Controller
